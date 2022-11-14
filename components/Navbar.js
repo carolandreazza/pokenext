@@ -23,6 +23,9 @@ export default function Navbar() {
         <li>
           <Link href="/about">Sobre</Link>
         </li>
+        <li>
+          <button className={styles.btn_connect}>Conectar carteira</button>
+        </li>
       </ul>
     </nav>
   )

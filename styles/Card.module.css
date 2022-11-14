@@ -44,3 +44,27 @@
     background-color: #e33d33;
     color: #fff;
   }
+
+  .card .btns {
+    display: flex;
+    padding-left: 2em;    
+    justify-content: center;
+    align-items: center;
+    padding: 2em 1em;
+  }
+
+  .btn_plus {
+    margin: 1em 0;
+    background-color: #e33d33;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.8em 1.2em;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.4s;
+    margin-left: 2em;
+    cursor: pointer;
+  }

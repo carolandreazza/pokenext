@@ -25,19 +25,15 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
   const id = context.params.pokemonId
-
-
   
-
   try {
     const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
     const data = await res.json()   
-
+    console.log(data)
     return {
         props: { pokemon: data },
     }
   } catch (error) {
-    // The Twitter API most likely died
     console.error(error)
     return { notFound: true }
   }
